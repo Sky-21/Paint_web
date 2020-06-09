@@ -1,0 +1,84 @@
+:root{
+    --backdground: #A4BEF3;
+    --buttons-header: #F6511D;
+}
+html{
+   
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body, html, div{
+    height: 100%;
+}
+
+body{
+    background-color: var(--backdground);
+    overflow: hidden;
+    
+}
+#main{
+   
+    height: 90vh;
+    margin: 0 1% 1%;
+}
+
+header{
+    margin: 1% 0 ;
+    height: 5vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    
+    
+    align-items: center;
+}
+header ul button{
+    height: 4vh;
+    width: 10vw;
+    margin-left: 1vw;
+    background-color: var(--buttons-header);
+    color:white;
+    border-radius: 8px;
+    border:none;
+    text-transform: uppercase;
+    
+    
+}
+header ul button:hover{
+
+}
+header ul .selected{
+    background-color: red;
+}
+[color]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+[color] input::-webkit-color-swatch-wrapper{
+    background-color: red;
+}
+[size]{
+    
+    display: flex;
+    
+    align-items: center;
+
+}
+
+
+
+.canvas{
+    border: 2px black solid;
+    background-color: white;
+    cursor: url('imgs/rocket.png') ,auto;
+}

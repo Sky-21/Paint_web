@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen Draw</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <header id='header'>
+            <ul>
+                <li><button class='button selected' onclick="paint()">Pincel</button> </li>
+                <li><button class='button' onclick="Eraser()">Borracha</button> </li>
+                <li><button  id='ClearFull'>Apagar Tudo</button></li>
+            </ul> 
+            <label size>Tamanho:
+                <input type="range" id='lineSize' onchange="ChangeLineSize(this)"/>
+            </label>
+            <label color>Cor:
+                <input type="color" id='color' onchange="ChangeColor(this)"/>
+            </label>
+           
+        </header>
+        <main id='main' class='main' batata>
+
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+
+    <script src='./script.js' ></script>
+    </body>
+</html>
