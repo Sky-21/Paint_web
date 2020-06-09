@@ -77,7 +77,7 @@ header label{
     height: 5vh;
 }
 [color] input::-webkit-color-swatch-wrapper{
-    
+    border:none;
 }
 [size]{
     
